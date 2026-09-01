@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Package and test caches
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Build outputs
+build/
+dist/
+
+# Generated  outputs
+
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+
+# Examples
+
+# examples/
+
+# Source directories
+src/
+cs_vom_fixed_src/

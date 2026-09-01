@@ -1,0 +1,31 @@
+Replace these files in your src/ directory:
+
+1. Bilayer_CS_VoM.py
+   - fixed script discovery
+   - validates actual --help interfaces
+   - canonical cleaning chain
+
+2. mesh_cleaning.py
+   - NOW the real Stage-1 conservative cleaner
+   - --coincident-tol 2.0 default
+   - writes original_to_cleaned_vertex.csv
+
+3. mesh_cleaning_stage3.py
+   - validated junction reconstruction
+   - --peel-layers 2 default
+   - --target-axial-spacing 325 default
+
+4. visualization.py
+   - browser/Plotly mixed Tr+Ln visualization
+   - compatible with build_biatrial_model.py
+
+Keep mesh_final_repair.py as the final local repair stage.
+
+The following uploaded files were already compatible and were retained unchanged:
+- tube_making.py
+- build_biatrial_model.py
+- build_biatrial_connections.py
+- build_bb_bridges.py
+- geometry_hybrid.py
+- mesh_io_hybrid.py
+- mesh_tags.py
